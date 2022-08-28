@@ -1,0 +1,227 @@
+/* 회원가입 */
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Koverwatch", "Apple SD Gothic Neo", sans-serif;
+}
+
+:root {
+    --main-color: #5d9ab2;
+    --accent-color: #f0b923;
+    --dark-main-color: #2b5566;
+    --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
+}
+
+form {
+    /* border: 1px solid #000; */
+    width: 1000px;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.close {
+    clear: both;
+}
+
+input,
+button,
+select {
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+#tel-danger {
+    padding: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: 4px;
+}
+
+table tr,
+table td {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+#dc {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#email2 {
+    width: 250px;
+    padding: 5px;
+    height: 49px;
+}
+
+.join_btn {
+    /* border: 1px solid #333; */
+    justify-content: center;
+}
+
+.join_btn button {
+    width: 100px;
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.join_btn button:hover {
+background: rgba(200, 200, 200, 0.5);
+border: 2px solid #f0b923;
+}
+
+
+
+
+
+/* 푸터 */
+footer {
+    background-color: #285566;
+    background-color: var(--dark-main-color);
+    color: #fff;
+    color: var(--text-bright-color);
+}
+
+footer .container {
+    padding: 40px 20px; /* 안쪽여백 */
+}
+
+/* 푸터 A : 사이트 정보 */
+.footA h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footA p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footA a {
+    color: inherit; /* 부모요소의 색상 사용 */
+    text-decoration: none;
+}
+
+.footA {
+    margin-bottom: 30px;
+}
+
+/* 푸터 B: 푸터메뉴 */
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footB a {
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footB div {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+
+    h3,
+    footer .container,
+    form,
+    .join_btn {
+        display: flex;
+        flex-wrap: wrap;
+
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footA {
+        flex: 0 0 40%;
+    }
+    .footB {
+        flex: 0 0 60%;
+    }
+    .footC {
+        flex: 0 0 1000%;
+    }
+}
+
+/* 푸터 D: SNS 메뉴 */
+.footD {
+    margin-top: 20px;
+}
+
+.footD ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footD a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 0;
+
+    border: 1px solid currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}

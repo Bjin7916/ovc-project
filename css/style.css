@@ -1,0 +1,436 @@
+@charset "UTF-8";
+@import url(../onlinefontconverter.com/converted-files/Koverwatch.woff);
+
+/* 기본색상 */
+:root {
+    --main-color: #5d9ab2;
+    --accent-color: #f0b923;
+    --dark-main-color: #333;
+    --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
+}
+
+/* 기본설정: 페이지 전체 */
+body {
+    margin: 0;
+    font-family: "Koverwatch", "Apple SD Gothic Neo", sans-serif;
+}
+
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 8px;
+}
+
+#navbar a.active {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+#navbar a.active:hover {
+    background-color: #f5a510;
+    border-radius: 8px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px; /* navbar에 가리지 않도록 그 밑으로 위치 */
+}
+
+.form_wrap {
+    float: right;
+}
+
+.form2_wrap {
+    float: right;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.login_wrap {
+    float: right;
+}
+
+.text_white:hover{
+    color: #333;
+}
+
+button  > a {
+    height: 20px;
+    vertical-align: auto;
+}
+
+
+/* 콘텐츠A : 헤더 배경 이미지 */
+.conA {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://t1.daumcdn.net/cfile/tistory/99C69D3E5B8A8FEE24);
+    background-position: center;
+    background-size: cover;
+    height: 82vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center; /* 세로 중앙 배치 */
+    justify-content: center; /* content 중앙 배치 */
+    color: var(--text-bright-color);
+}
+
+.conA h1 {
+    margin-top: 0;
+    color: #d68c03;
+    margin-bottom: 5px;
+    font-size: 15vw; /* 768px 이하에선 상대적인 크기*/
+    font-family: "Montserrat", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+}
+
+.conA img {
+    width: 20%;
+}
+
+.conA a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #3f3f3f;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    padding: 10px 30px;
+    border: solid 2px #fff;
+    border-radius: 6px;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #d68c03;
+}
+
+.conA a:hover {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+    );
+}
+
+@media (min-width: 768px) {
+    .conA h1 {
+        font-size: 115px;
+    } /* 768px 이상에선 고정크기*/
+    .conA p {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+/* 콘텐츠 B: 개요(아이콘 + 텍스트) */
+.conB {
+    background-color: #000;
+}
+
+.conB .text {
+    text-align: center;
+}
+
+.conB h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.conB p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8; /* 줄높이 : font-size 의 1.8배 */
+    opacity: 0.8;
+}
+
+.conB a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.conB a:hover {
+    text-decoration: underline;
+}
+
+.conB .icon {
+    font-size: 40px;
+    width: 2em; /* 폭 글꼴 크기의 2배 */
+    line-height: 2em; /* 높이, 글꼴 크기의 2배 */
+
+    color: #fff;
+    color: var(--icon-color);
+    background-color: #000;
+    background-color: var(--icon-bk-color);
+
+    border-radius: 10px; /* 둥글게 만들기 */
+    text-align: center;
+
+    display: inline-block; /* 아래 margin 적용을 위해 */
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    /* 768 이상(pc) */
+    /* flexible box 기능으로 가로 정렬 */
+    .conB .container {
+        /* 그래서, 부모를 flex 로 설정 */
+        display: flex;
+        max-width: 1000px; /* 최대 폭 지정 */
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conB .text {
+        flex: 1; /* 1 : 1 : 1 비율 설정 */
+    }
+}
+
+.conB .container {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.conB .text {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}
+
+.conB h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* 콘텐츠 C: 개요(이미지 + 텍스트) */
+
+.conC {
+    background-color: #000;
+    color: #fff;
+    color: var(--text-bright-color);
+    
+}
+
+.container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .conC .container {
+        display: flex;
+        /*  컨텐츠 B 와 너비 맞추기 */
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conC .container .iframe_wrap iframe {
+        width: 540px;
+        max-height: 400px;
+    }
+
+    .conC .photo {
+        flex: 3;
+    }
+
+    .conC .text {
+        flex: 2;
+        padding: 50px;
+    }
+}
+
+.conC .text {
+    padding: 20px; /* 글자주변 여백 */
+}
+
+
+
+/* 푸터 */
+footer {
+    background-color: #d68c03;
+    color: #fff;
+    color: var(--text-bright-color);
+}
+
+footer .container {
+    padding: 40px 20px; /* 안쪽여백 */
+}
+
+/* 푸터 A : 사이트 정보 */
+.footA h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footA p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footA a {
+    color: inherit; /* 부모요소의 색상 사용 */
+    text-decoration: none;
+}
+
+.footA {
+    margin-bottom: 30px;
+}
+
+/* 푸터 B: 푸터메뉴 */
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footB a {
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.footB a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footB div {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footA {
+        flex: 0 0 40%;
+    }
+    .footB {
+        flex: 0 0 60%;
+    }
+    .footC {
+        flex: 0 0 1000%;
+    }
+}
+
+/* 푸터 D: SNS 메뉴 */
+.footD {
+    margin-top: 20px;
+}
+
+.footD ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footD a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    padding: 0;
+
+    border: 1px solid currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.footD a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* News Page */
+
+#table_wrap {
+    width: 60%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+
+
