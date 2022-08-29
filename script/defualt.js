@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("sticky");
     }
 });
-
+// nav 클릭 이벤트
 $('#join').click(function(){
 	window.location.href="joinform.html"
 })
