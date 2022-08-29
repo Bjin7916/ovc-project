@@ -1,94 +1,5 @@
 @charset "UTF-8";
-@import url(../onlinefontconverter.com/converted-files/Koverwatch.woff);
-
-/* 기본색상 */
-:root {
-    --main-color: #5d9ab2;
-    --accent-color: #f0b923;
-    --dark-main-color: #333;
-    --text-bright-color: #fff;
-    --icon-color: #fff;
-    --icon-bk-color: #ddd;
-    --large-width: 1000px;
-}
-
-/* 기본설정: 페이지 전체 */
-body {
-    margin: 0;
-    font-family: "Koverwatch", "Apple SD Gothic Neo", sans-serif;
-}
-
-#navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-#navbar a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-}
-
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    border-radius: 8px;
-}
-
-#navbar a.active {
-    background-color: #333;
-    color: white;
-    font-weight: bold;
-}
-
-#navbar a.active:hover {
-    background-color: #f5a510;
-    border-radius: 8px;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px; /* navbar에 가리지 않도록 그 밑으로 위치 */
-}
-
-.form_wrap {
-    float: right;
-}
-
-.form2_wrap {
-    float: right;
-}
-
-.btn:hover {
-    background-color: #ddd;
-}
-
-.login_wrap {
-    float: right;
-}
-
-.text_white:hover{
-    color: #333;
-}
-
-button  > a {
-    height: 20px;
-    vertical-align: auto;
-}
-
+@import url(https://bjin7916.github.io/fonthosting/font/Koverwatch.woff);
 
 /* 콘텐츠A : 헤더 배경 이미지 */
 .conA {
@@ -169,7 +80,7 @@ button  > a {
 .conB h2 {
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -193,8 +104,8 @@ button  > a {
 
 .conB .icon {
     font-size: 40px;
-    width: 2em; /* 폭 글꼴 크기의 2배 */
-    line-height: 2em; /* 높이, 글꼴 크기의 2배 */
+    width: 4em; /* 폭 글꼴 크기의 2배 */
+    line-height: 4em; /* 높이, 글꼴 크기의 2배 */
 
     color: #fff;
     color: var(--icon-color);
@@ -248,7 +159,6 @@ button  > a {
     background-color: #000;
     color: #fff;
     color: var(--text-bright-color);
-    
 }
 
 .container form {
@@ -257,6 +167,7 @@ button  > a {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    border: 2px solid #fff;
 }
 
 
@@ -283,151 +194,6 @@ button  > a {
         flex: 2;
         padding: 50px;
     }
-}
-
-.conC .text {
-    padding: 20px; /* 글자주변 여백 */
-}
-
-
-
-/* 푸터 */
-footer {
-    background-color: #d68c03;
-    color: #fff;
-    color: var(--text-bright-color);
-}
-
-footer .container {
-    padding: 40px 20px; /* 안쪽여백 */
-}
-
-/* 푸터 A : 사이트 정보 */
-.footA h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.footA p {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.footA a {
-    color: inherit; /* 부모요소의 색상 사용 */
-    text-decoration: none;
-}
-
-.footA {
-    margin-bottom: 30px;
-}
-
-/* 푸터 B: 푸터메뉴 */
-.footB h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    border-bottom: 1px solid currentColor;
-    font-size: 14px;
-}
-
-.footB ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footB a {
-    color: inherit;
-    font-size: 12px;
-    text-decoration: none;
-    display: block;
-    padding: 5px;
-}
-
-.footB a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.footB div {
-    margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-    .footB {
-        display: flex;
-    }
-
-    .footB div {
-        flex: 1;
-    }
-
-    .footB div:not(:first-child) {
-        margin-left: 40px;
-    }
-
-    footer .container {
-        display: flex;
-        flex-wrap: wrap;
-
-        max-width: 1000px;
-        max-width: var(--large-width);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .footA {
-        flex: 0 0 40%;
-    }
-    .footB {
-        flex: 0 0 60%;
-    }
-    .footC {
-        flex: 0 0 1000%;
-    }
-}
-
-/* 푸터 D: SNS 메뉴 */
-.footD {
-    margin-top: 20px;
-}
-
-.footD ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.footD a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    padding: 0;
-
-    border: 1px solid currentColor;
-    width: 2em;
-    line-height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    margin-right: 8px;
-}
-
-.footD a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-/* News Page */
-
-#table_wrap {
-    width: 60%;
-    display: flex;
-    align-content: center;
-    align-items: center;
 }
 
 

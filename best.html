@@ -14,19 +14,76 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,700;1,500&display=swap"
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/7806049a8f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/write.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/write.css">
+        
     <title>OverWatch Main</title>
 
 </head>
 
 <body>
+    <div id="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="notice.html">공지사항</a>
+        <a href="best.html">최고의 플레이</a>
+        <a href="list.html">자유게시판</a>
+        <div class="close"></div>
+        <div class="login_wrap">
+            <div class="form_wrap">
+                <div class="form2_wrap form2">
+                    <button id="join" type="button" class="btn d-table my-2 mx-auto text-white">
+                        회원가입
+                    </button>
+                </div>
+                <button type="button" class="btn d-table my-2 mx-auto text-white" data-bs-toggle="modal"
+                    data-bs-target="#ModalForm">
+                    로그인
+                </button>
+
+                <!-- Modal Form -->
+                <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- Login Form -->
+                            <form action="">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">O.W.C 로그인</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="Username">아이디<span class="text-danger">*</span></label>
+                                        <input type="text" name="username" class="form-control" id="Username"
+                                            placeholder="아이디">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="Password">비밀번호<span class="text-danger">*</span></label>
+                                        <input type="password" name="password" class="form-control" id="Password"
+                                            placeholder="비밀번호">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                                        <label class="form-check-label" for="remember">로그인 정보 기억하기</label>
+                                        <a href="#" class="float-end">Forgot Password</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer pt-4">
+                                    <button type="button" class="btn mx-auto w-100">로그인</button>
+                                </div>
+                                <button type="button" class="btn mx-auto mb-2 w-100">회원가입</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 헤더 -->
     <section class="conA">
         <div class="container">
             <h1>OVERWATCH</h1>
-            <div>
-                <a href="index.html">HOME</a>
-            </div>
         </div>
     </section>
 
@@ -38,7 +95,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/lfy2NCOKX1c"
                         title="YouTube video player" frameborder="0"
@@ -54,7 +111,7 @@
 
 
 
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/T4Bf2x_BIZU"
                         title="YouTube video player" frameborder="0"
@@ -71,7 +128,7 @@
 
 
 
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/oGN9KN7VXWQ"
                         title="YouTube video player" frameborder="0"
@@ -87,7 +144,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/3HOIgUXrZtg"
                         title="YouTube video player" frameborder="0"
@@ -103,7 +160,7 @@
 
 
 
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/bONcnrQw6xs"
                         title="YouTube video player" frameborder="0"
@@ -117,10 +174,7 @@
                 </div>
             </div>
 
-
-
-
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/bxyaTwnXhm0"
                         title="YouTube video player" frameborder="0"
@@ -136,7 +190,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/QizRsjSwEfQ"
                         title="YouTube video player" frameborder="0"
@@ -150,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/cokYsa8imjo"
                         title="YouTube video player" frameborder="0"
@@ -164,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col card-wrap">
                 <div class="card">
                     <iframe width="535" height="315" src="https://www.youtube.com/embed/mWJOb8s9HcY"
                         title="YouTube video player" frameborder="0"
@@ -225,10 +279,10 @@
             <!-- 푸터D : SNS 아이콘 -->
             <nav class="footD">
                 <ul>
-                    <li><a href="#"><span class="fa fa-twitter" title="Twitter"></span></a></li>
-                    <li><a href="#"><span class="fa fa-facebook" title="Facebook"></span></a></li>
-                    <li><a href="#"><span class="fa fa-google-plus" title="Google Plus"></span></a></li>
-                    <li><a href="#"><span class="fa fa-instagram" title="Instagram"></span></a></li>
+                    <li><a href="https://twitter.com/?lang=ko"><span class="fa fa-twitter" title="Twitter"></span></a></li>
+                    <li><a href="https://ko-kr.facebook.com/"><span class="fa fa-facebook" title="Facebook"></span></a></li>
+                    <li><a href="http://www.google.com"><span class="fa fa-google-plus" title="Google Plus"></span></a></li>
+                    <li><a href="https://www.instagram.com/"><span class="fa fa-instagram" title="Instagram"></span></a></li>
                     <li><a href="http://www.youtube.com"><span class="fa fa-youtube" title="YouTube"></span></a></li>
                 </ul>
             </nav>
@@ -244,7 +298,7 @@
 
 
 
-
+    <script type="text/javascript" src="./script/defualt.js"></script>
 </body>
 
 </html>

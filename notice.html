@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,700;1,500&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7806049a8f.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>자유게시판</title>
-    <link rel="stylesheet" href="./css/write.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
     
+    <title>공지사항</title>
 </head>
 
 <body>
+    <div class="noti-wrap">
     <div id="navbar">
         <a class="active" href="index.html">Home</a>
         <a href="notice.html">공지사항</a>
@@ -55,7 +53,6 @@
                                         <input type="text" name="username" class="form-control" id="Username"
                                             placeholder="아이디">
                                     </div>
-
                                     <div class="mb-3">
                                         <label for="Password">비밀번호<span class="text-danger">*</span></label>
                                         <input type="password" name="password" class="form-control" id="Password"
@@ -78,71 +75,68 @@
             </div>
         </div>
     </div>
-    <!-- 헤더 -->
-    <header>
-        <div class="container">
 
-        </div>
-    </header>
-
-    <!-- 컨텐츠 A -->
-    <section class="conA">
-        <div class="container">
-            <h1>OVERWATCH</h1>
-            <div>
-                <a href="index.html">HOME</a>
-            </div>
-        </div>
-    </section>
+    
     <div class="board_wrap">
-        <div class="board_title">
-            <strong>자유게시판</strong>
-            <p>자유롭게 소통해요.</p>
-        </div>
-        <div class="board_view_wrap">
-            <div class="board_view">
-                <div class="title">
-                    글 제목이 들어갑니다.
+            <h3>공지사항</h3>
+            <div class="board_list">
+                <div class="top">
+                    <div class="num table table-stripe">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
                 </div>
-                <div class="info">
-                    <dl>
-                        <dt>번호</dt>
-                        <dd>1</dd>
-                    </dl>
-                    <dl>
-                        <dt>글쓴이</dt>
-                        <dd>정범진</dd>
-                    </dl>
-                    <dl>
-                        <dt>작성일</dt>
-                        <dd>2022.08.21</dd>
-                    </dl>
-                    <dl>
-                        <dt>조회</dt>
-                        <dd>354</dd>
-                    </dl>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title"><a href="#">불법프로그램 이용 유저 제재 안내</a></div>
+                    <div class="writer">GM</div>
+                    <div class="date">2022.08.28</div>
+                    <div class="count">1818</div>
                 </div>
-                <div class="cont">
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.<br>
-글 내용이 들어갑니다.
+                <div><div class="num">4</div>
+                    <div class="title"><a href="#">추석 이벤트 공지</a></div>
+                    <div class="writer">GM</div>
+                    <div class="date">2022.08.26</div>
+                    <div class="count">913</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title"><a href="#">여름 이벤트 당첨자 추첨 결과 안내</a></div>
+                    <div class="writer">GM</div>
+                    <div class="date">2022.08.21</div>
+                    <div class="count">9999</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title"><a href="#">여름 이벤트 공지</a></div>
+                    <div class="writer">GM</div>
+                    <div class="date">2022.07.21</div>
+                    <div class="count">2222</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title"><a href="#">커뮤니티 이용시 주의 사항(필독)</a></div>
+                    <div class="writer">GM</div>
+                    <div class="date">2022.06.21</div>
+                    <div class="count">3548</div>
                 </div>
             </div>
-
-            <div class="bt_wrap">
-                <a href="list.html" class="on">목록</a>
-                <a href="edit.html">수정</a>
+            <div class="board_page noti-page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
             </div>
-        </div>
-    </div>
+    
     <!-- footer -->
     <footer>
-        <div class="container">
+        <div class="container noti-contain">
             <!-- 푸터 A: 사이트 정보 -->
             <div class="footA">
                 <h2>OVERWATCH COMMUNITY</h2>
@@ -161,9 +155,9 @@
                 <div>
                     <h3>CONTENTS</h3>
                     <ul>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
                         <li><a href="best.html">최고의 플레이</a></li>
-                        <li><a href="write.html">자유게시판</a></li>
+                        <li><a href="list.html">자유게시판</a></li>
                     </ul>
                 </div>
             </nav>
@@ -185,8 +179,7 @@
 
         </div>
     </footer>
-
-
+</div>
 
     <script type="text/javascript" src="./script/defualt.js"></script>
 </body>
